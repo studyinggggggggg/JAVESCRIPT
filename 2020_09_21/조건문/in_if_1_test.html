@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var id = "1234";
+        var pw = "1234";
+
+        var user_id = prompt("ID :  ");
+        var user_pw = prompt("PW :  ");
+
+        if(id == user_id){
+            if(pw == user_pw){
+                document.write("로그인 완료.");
+            }
+            else{
+                alert("비밀번호 오류");
+                location.reload();
+            }
+        }
+        else{
+            alert("아이디 오류");
+            location.reload();
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
