@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var rightId = "korea";
+        var rightPw = "1234";
+
+        function login(id,pw){
+            if(id == rightId){
+                if(pw == rightPw){
+                    document.write("방문을 환영합니다.")
+                }
+                else{
+                    alert("잘못된 페스워드 입니다.")
+                }
+            }
+            else{
+                alert("잘못된 아이디 입니다.")
+            }
+        }
+
+        var userId = prompt("아이디");
+        var userPw = prompt("패스워드");
+
+        login(userId,userPw);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

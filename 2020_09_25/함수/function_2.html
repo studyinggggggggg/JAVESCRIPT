@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var color = ["yellow","red","black","blue"];
+
+        var i = 0;
+        function changeColor(){
+            i++;
+            if(i >= color.length){
+                i = 0;
+            }
+        
+
+        var bodyTag = document.getElementById("theBody"); 
+        //getElementById는 id값을 이용해 객체를 태그하는 역할.
+        bodyTag.style.backgroundColor = color[i];
+        }
+    </script>
+</head>
+<body id = "theBody">
+    <button onclick="changeColor();">배경색 바꾸기</button>
+</body>
+</html>
